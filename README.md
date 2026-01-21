@@ -66,7 +66,7 @@ cat alive.txt | katana -d 5 -jc -silent | grep -iE "\.js$" | sort -u > js.txt
 
 ### Extract Secrets from JS
 ```bash
-cat js.txt | httpx -silent -sr -srd js_files/
+cat js.txt | httpx-toolkit -silent -sr -srd js_files/
 ```
 
 ### Scan JS with Nuclei
